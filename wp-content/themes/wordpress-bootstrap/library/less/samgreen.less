@@ -1,0 +1,568 @@
+@import "bootstrap.less";
+
+@font-face {
+        font-family: 'Platform Web';
+		src: url('/wp-content/themes/wordpress-bootstrap/library/less/fonts/PlatformWeb-Regular.eot');
+		src: url('/wp-content/themes/wordpress-bootstrap/library/less/fonts/PlatformWeb-Regular.eot?#iefix') format('embedded-opentype'),
+			 url('/wp-content/themes/wordpress-bootstrap/library/less/fonts/PlatformWeb-Regular.woff') format('woff'),
+			 url('/wp-content/themes/wordpress-bootstrap/library/less/fonts/PlatformWeb-Regular.ttf') format('truetype'),
+			 url('/wp-content/themes/wordpress-bootstrap/library/less/fonts/PlatformWeb-Regular.svg#Platform Web') format('svg');
+		font-weight: 400;
+		font-style: normal;
+		font-stretch: normal;
+		}
+
+
+body {
+	background-color: @tan;
+	.freightBook();
+	font-size: 100%;
+	line-height: 1.125em;
+	color: @black;
+	width: 1020px;
+	margin: 0 auto;
+	p {
+		font-size: .875em;
+	}
+}
+
+* {
+	-webkit-transition: all 0.15s ease;
+  	-moz-transition:    all 0.15s ease;
+  	-ms-transition:     all 0.15s ease;
+  	-o-transition:      all 0.15s ease; 
+	transition: 		all 0.15s ease;
+}
+
+a {
+	color: @brown;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+		color: @green;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: normal;
+}
+
+.lead {
+	line-height: 1.125em;
+	margin-bottom: 10px;
+}
+
+.button {
+	width: 93%;
+	height: 40px;
+	border-radius: 20px;
+	border-style: dotted;
+	border: 1px solid @grayLight;
+	font-family: 'Platform Web', sans-serif;
+	font-size: 1.2em;
+	letter-spacing: 2px;
+	color: @black;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	line-height: 43px;
+	a {
+		color: @black;
+		&:hover, &:active {
+			color: @green;
+		}
+	}
+}
+
+.pageTitle{
+	h2 {
+		font-family: 'Platform Web', sans-serif;
+		font-size: 1em;
+		text-transform: uppercase;
+		color: @brown;
+		letter-spacing: 1px;
+		line-height: 1em;
+		margin-bottom: 20px;
+	}
+}
+
+.homeLink:hover {
+	.headerPhoto {
+		border-color: @green;
+	}
+	h1 {
+		font-family: 'Platform Web', sans-serif;
+		color: @green;
+		margin-top: 54px;
+		letter-spacing: 1px;
+	}
+}
+
+article h1.h2 {
+	line-height: 30px;
+}
+
+b, strong {
+	font-family: @freightSemibold;
+}
+
+body {
+	padding-top: 0;
+	#inner-header {
+		height: 275px;
+	}
+	header {
+		.header {
+			height: 235px;
+			border-bottom: 1px solid @grayLight;
+			padding: 0 0 20px;
+			.headerPhoto {
+				width: 82px;
+				height: 82px;
+				background-image: url("/wp-content/themes/wordpress-bootstrap/images/sam_head1.png");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-color: @white;
+				margin: 20px 20px 20px 0;
+				border-radius: 41px;
+				float: left;
+				border: 1px solid @tan;
+			}
+			h1 {
+				font-family: 'Platform Web', sans-serif;
+				color: @brown;
+				font-size: 5em;
+				margin-top: 54px;
+				letter-spacing: 1px;
+			}
+			h2 {
+				clear: both;
+				color: @black;
+				font-size: 1.3em;
+				line-height: 1.3em;
+				a {
+					color: @brown;
+					&:hover {
+						color: @green;
+					}
+				}
+			}
+			.socialIcons {
+				position: relative;
+				top: -182px;
+				right: 0;
+				float: right;
+				width: 100px;
+				height: 40px;
+				z-index: 1;
+				.facebook {
+					background-image: url("/wp-content/themes/wordpress-bootstrap/images/facebook.png");
+					display: inline-block;
+					background-size: cover;
+					width: 40px;
+					height: 40px;
+					float: right;
+					&:hover {
+						background-image: url("/wp-content/themes/wordpress-bootstrap/images/facebook-hover.png");
+					}
+				}
+				.twitter {
+					background-image: url("/wp-content/themes/wordpress-bootstrap/images/twitter.png");
+					display: inline-block;
+					background-size: cover;
+					width: 40px;
+					height: 40px;
+					margin-right: 20px;
+					float: right;
+					&:hover {
+						background-image: url("/wp-content/themes/wordpress-bootstrap/images/twitter-hover.png");
+					}
+				}
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+			.headerContactInfo {
+				float: right; 
+				padding: 0; 
+				margin-top: -52px; 
+				margin-right: 0px; 
+				width: 998px; 
+				text-align: right; 
+			}
+		}
+	}
+	#content {
+		padding-top: 20px;
+		#sidebar1 {
+			text-align: center;
+			ul {
+				list-style-type: none;
+				margin: 0;
+				li {
+					font-size: 110%;
+					font-family: 'Platform Web', sans-serif;
+					letter-spacing: 3px;
+					&:active, &:hover {
+						background-color: #FFFBF3;
+					}
+				}
+			}
+			.contactInfo {
+				margin-top: 40px;
+				address {
+				    display: none;
+					font-size: .9em;
+					margin-bottom: 0;
+				}
+				p {
+				    display: none;
+					margin: 5px 0;
+				}
+			}
+		}
+		#main {
+			article {
+				border-bottom: 1px solid @grayLight;
+				margin-bottom: 30px;
+				header {
+					margin-bottom: 10px;
+					.meta {
+						color: @black;
+						.futuraBook();
+						text-transform: uppercase;
+					}
+					.page-header {
+						margin: 0;
+						padding: 0;
+						border-bottom: none;
+						h1 {
+							margin-top: 0;
+							.futuraLight();
+						}
+					}
+					.tags {
+						line-height: 0 !important;
+						margin-bottom: 15px;
+						.label {
+							.futuraBook();
+							font-size: .7em;
+							text-transform: uppercase;
+							color: @brown;
+							margin: -10px 0 15px;
+							background-color: @tan !important;
+							padding: 0;
+							text-shadow: none;
+							line-height: 0 !important;
+							&:hover {
+								text-decoration: underline;
+							}
+						}
+						.tags-title {
+							display: none;
+						}
+					}
+				}
+				.post_content {
+					p {
+						font-size: 1.1em;
+						.freightBook();
+						line-height: 1.5em;
+					}
+					img {
+						margin-bottom: 5px;
+						padding: 3px;
+						border: 1px solid @grayLight;
+						background-color: #fffbf3;
+					}
+					img.alignleft, img.alignright {
+						max-width: 46%;
+					}
+					img.aligncenter {
+						max-width: 98%;
+					}
+				}
+			}
+		}
+		#sidebar2 {
+			p {
+				font-family: 'Platform Web';
+				color: @brown;
+				font-size: 1em;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				text-align: center;
+				margin-bottom: 20px;
+				a {
+					font-size: .8em;
+				}
+			}
+			.selectedFilms {
+				img {
+					margin-bottom: 40px;
+				}
+			}
+		}
+	}
+	.projectPage {
+		.projectImage {
+			width: 200px;
+			height: auto;
+			float: left;
+			margin: 0 20px 20px 0;
+			ul {
+				list-style-type: none;
+				margin: 20px 0 0;
+				text-align: center;
+				.button {
+					background-color: @olive;
+					color: @white;
+					font-size: .9em;
+					line-height: 30px;
+					height: 30px;
+					&:hover {
+						background-color: @brown;
+					}
+				}
+			}
+		}
+		.projectInfo {
+			float: left;
+			width: 72%;
+			h1 {
+				margin: 0;
+				.futuraLight();
+				text-transform: uppercase;
+				font-size: 1.7em;
+				letter-spacing: 1px;
+				color: @brown;
+			}
+			h2 {
+				.futuraLight();
+				color: @black;
+				font-size: 1.5em;
+				line-height: 1.2em;
+				margin: 0;
+			}
+			h3 {
+				.futuraBook();
+				margin: 10px 0 40px;
+				font-size: .9em;
+				line-height: 1em;
+			}
+			section.post_content {
+				margin-top: 20px;
+			}
+		}
+	}
+	#content .projectListPage {
+		#main {
+			h2 {
+				font-family: 'Platform Web', sans-serif;
+				font-size: 1em;
+				text-transform: uppercase;
+				color: @brown;
+				letter-spacing: 1px;
+				line-height: 1em;
+				margin-bottom: 20px;
+			}
+			article {
+				width: 21.2%;
+				height: 350px;
+				margin-right: 5%;
+				border: none;
+				float: left;
+				&:nth-child(4n+4) {
+					margin-right: 0;
+				}
+				header {
+					img {
+						width: 100%;
+					}
+					.page-header h1 {
+						.futuraBook();
+						font-size: .9em;
+						line-height: 1.5em;
+						text-align: center;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+	}
+	#content .regularPage #main {
+		article {
+			border: none;
+		}
+		header .page-header h2.page-title {
+			font-family: 'Platform Web', sans-serif;
+			font-size: 1em;
+			text-transform: uppercase;
+			color: @brown;
+			letter-spacing: 1px;
+			line-height: 1em;
+			margin-bottom: 20px;
+		}
+	}
+	.storePage {
+		.projectImage {
+			width: 200px;
+			height: auto;
+			float: left;
+			margin: 0 20px 20px 0;
+			ul {
+				list-style-type: none;
+				margin: 20px 0 0;
+				text-align: center;
+				.button {
+					font-family: 'Platform Web', sans-serif;
+					background-color: @olive;
+					color: @white;
+					font-size: .9em;
+					line-height: 30px;
+					height: 30px;
+					width: 115px;
+					margin: 0 auto;
+					&:hover {
+						background-color: @brown;
+					}
+				}
+				li.filmPrice {
+				    font-family: 'Platform Web';
+					display: inline-block;
+					margin-bottom: 5px;
+					span {
+						color: @green;
+					}
+				}
+			}
+		}
+	}
+	.pressPage {
+		section p {
+			font-size: 17.6px;
+			line-height: 26.4px;
+			margin-bottom: 40px;
+		}
+		#main article {
+			margin-bottom: 5px !important;
+			border: none !important;
+		}
+		h3 {
+			font-size: 17.6px;
+			color: @black;
+			margin-top: 0;
+			line-height: 1.1em;
+			a {
+				color: @brown;
+				font-weight: bold;
+				&:hover {
+					color: @green;
+				}
+			}
+			small {
+				color: @black;
+				font-size: .7em;
+				text-transform: capitalize;
+			}
+		}
+	}
+	.mediaPage {
+		.kit {
+			list-style-type: none;
+			margin: 0;
+			li {
+				float: left;
+				width: 150px;
+				margin-right: 13px;
+				margin-bottom: 13px;
+				&:nth-child(5n+5) {
+					margin-right: 0;
+				}
+				p {
+					height: 80px;
+					overflow: hidden;
+					margin-top: 5px;
+				}
+			}
+		}
+		section p {
+			margin-bottom: 30px;
+		}
+	}
+	.tagPage {
+		.page-header {
+			border: none;
+			margin-top: 0;
+			border-bottom: 1px solid @grayLight;
+			padding-bottom: 0;
+			margin-bottom: 20px;
+			h1 {
+				color: #634300;
+				font-family: "freight-sans-pro",sans-serif;
+			    font-size: 1em;
+			    font-style: normal;
+			    font-weight: 400;
+			    letter-spacing: 1px;
+			    line-height: 1em;
+			    text-transform: uppercase;
+			}
+		}
+		.more-link {
+			display: block;
+			margin-top: 10px;
+		}
+	}
+	footer {
+		height: 100px;
+	}
+}
+
+.pagination {
+	.disabled {
+		display: none;
+	}
+	ul {
+		border: none;
+		box-shadow: none;
+		li > a, li > span {
+			border: none;
+			background-color: @tan;
+			&:hover {
+				background-color: @tan;
+			}
+		}
+		li.active a {
+			background-color: @tan;
+		}
+	}
+}
+
+
+
+body.blog li#news,
+body.page-id-52 li#about,
+body.page-id-31 li#films,
+body.page-id-59 li#store,
+body.page-id-64 li#press,
+body.page-id-82 li#media {
+color: @green;
+background: #FFFBF3;
+}
+
+article header img {
+	border: 1px solid @tan;
+	&:hover {
+		border-color: @green;
+	}
+}
+
+body.page div.container-fluid div.regularPage div#main.span8 article {
+	border: none;
+}
+
+
+
