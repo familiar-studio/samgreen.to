@@ -12,10 +12,55 @@
 		font-stretch: normal;
 		}
 
+    // FONTS
+    // --------------------------------------------------
+
+    .futuraLight {
+      font-family: "futura-pt",sans-serif;
+      font-style: normal;
+      font-weight: 300;
+    }
+    .futuraLightItalic {
+      font-family: "futura-pt",sans-serif;
+      font-style: italic;
+      font-weight: 300;
+    }
+    .futuraBook {
+      font-family: "futura-pt",sans-serif;
+      font-style: normal;
+      font-weight: 400;
+    }
+    .futuraMedium {
+      font-family: "futura-pt",sans-serif;
+      font-style: normal;
+      font-weight: 500;
+    }
+    .freightBook {
+      font-family: "freight-sans-pro",sans-serif;
+      font-style: normal;
+      font-weight: 400;
+    }
+    .freightBookItalic {
+      font-family: "freight-sans-pro",sans-serif;
+      font-style: italic;
+      font-weight: 400;
+    }
+    .freightSemibold {
+      font-family: "freight-sans-pro",sans-serif;
+      font-style: normal;
+      font-weight: 600;
+    }
+    .freightSemiboldItalic {
+      font-family: "freight-sans-pro",sans-serif;
+      font-style: italic;
+      font-weight: 600;
+    }
+
+
 
 body {
 	background-color: @tan;
-	.freightBook();
+	font-family:@freightBook;
 	font-size: 100%;
 	line-height: 1.125em;
 	color: @black;
@@ -30,7 +75,7 @@ body {
 	-webkit-transition: all 0.15s ease;
   	-moz-transition:    all 0.15s ease;
   	-ms-transition:     all 0.15s ease;
-  	-o-transition:      all 0.15s ease; 
+  	-o-transition:      all 0.15s ease;
 	transition: 		all 0.15s ease;
 }
 
@@ -186,12 +231,12 @@ body {
 				}
 			}
 			.headerContactInfo {
-				float: right; 
-				padding: 0; 
-				margin-top: -52px; 
-				margin-right: 0px; 
-				width: 998px; 
-				text-align: right; 
+				float: right;
+				padding: 0;
+				margin-top: -52px;
+				margin-right: 0px;
+				width: 998px;
+				text-align: right;
 			}
 		}
 	}
@@ -563,6 +608,3 @@ article header img {
 body.page div.container-fluid div.regularPage div#main.span8 article {
 	border: none;
 }
-
-
-
